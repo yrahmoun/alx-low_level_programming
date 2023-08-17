@@ -2,14 +2,14 @@
 
 /**
  * print_diagonal - prints a diagonal line
- * @n: number of \
+ * @n: number
  */
 
 void print_diagonal(int n)
 {
-	int i = 1;
-	int j;
+	int i, j;
 
+	i = 1;
 	while (i <= n)
 	{
 		j = 1;
@@ -22,7 +22,7 @@ void print_diagonal(int n)
 			j++;
 		}
 		if (i == n)
-			break ;
+			break;
 		_putchar('\n');
 		i++;
 	}
