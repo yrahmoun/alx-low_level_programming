@@ -9,7 +9,8 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	char p[] = ",;.!?\"(){}";
+	char p[] = {',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 	int j;
 
 	while (s[i])
