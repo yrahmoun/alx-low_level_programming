@@ -20,7 +20,7 @@ char *cap_string(char *s)
 		j = 0;
 		while (p[j])
 		{
-			if ((i > 0 && s[i - 1] <= 32) || s[i] == p[j])
+			if ((i > 0 && s[i - 1] <= 32) || s[i - 1] == p[j])
 			{
 				if (s[i] >= 'a' && s[i] <= 'z')
 					s[i] -= 32;
