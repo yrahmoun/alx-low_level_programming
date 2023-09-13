@@ -18,6 +18,8 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	while (i < 5)
 	{
