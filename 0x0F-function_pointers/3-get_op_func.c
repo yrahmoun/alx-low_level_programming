@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_func- get the function to execute
+ * get_op_func - get the function to execute
  * @s: operator to compare
  * Return: pointer to function
  */
