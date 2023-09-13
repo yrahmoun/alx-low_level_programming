@@ -9,7 +9,7 @@
 
 int main(int ac, char **av)
 {
-	char op;
+	int (*op)(int, int);
 	int res;
 
 	if (ac != 4)
@@ -22,9 +22,8 @@ int main(int ac, char **av)
 		printf("Error\n");
 		exit(99);
 	}
-	op = av[2][0];
-	if (op != '+' && op != '-' && op != '*' && op != '/'
-		&& op != '%')
+	op = get_op_func(av[2]);
+	if (!op)
 	{
 		printf("Error\n");
 		exit(99);
