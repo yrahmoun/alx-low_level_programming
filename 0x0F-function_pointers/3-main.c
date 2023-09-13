@@ -18,7 +18,7 @@ int main(int ac, char **av)
 		return (98);
 	}
 	op = get_op_func(av[2]);
-	if (!op)
+	if (op == 0)
 	{
 		printf("Error\n");
 		return (99);
