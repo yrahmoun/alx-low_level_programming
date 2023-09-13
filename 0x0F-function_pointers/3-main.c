@@ -15,13 +15,13 @@ int main(int ac, char **av)
 	if (ac != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 	op = get_op_func(av[2]);
 	if (!op)
 	{
 		printf("Error\n");
-		exit(99);
+		return (99);
 	}
 	res = op(atoi(av[1]), atoi(av[3]));
 	printf("%d\n", res);
