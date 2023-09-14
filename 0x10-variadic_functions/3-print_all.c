@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	va_list p;
 	char *s;
-	int flag;
+	int flag = 0;
 
 	va_start(p, format);
 	while (format[i])
@@ -44,4 +44,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
+	va_end(p);
 }
