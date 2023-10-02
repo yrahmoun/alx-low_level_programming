@@ -47,7 +47,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fd_dest = open(av[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
+	fd_dest = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
