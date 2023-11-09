@@ -25,7 +25,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			free(curr);
 			return (1);
 		}
-		if (count + 1 == index && !curr->next)
+		if (count + 1 == index && curr->next)
 		{
 			free(curr->next);
 			curr->next = NULL;
